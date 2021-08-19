@@ -1,0 +1,137 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My resume</title>
+  <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+</head>
+<body>
+  <br>
+  <div class="container">
+  <div class="card">
+    <div class="card-body ">
+      <h1>SAMUEL GOODNEWS EGHO</h1>
+    </div>
+    <hr>
+    <div class="card-body ">
+      <center>
+        <p>Flat 2, block S, Federal highway patrol barracks, ikeja, Lagos, Nigeria</p>
+        <p>samuelgoodnews15@gmail.com</p>
+        <p>08053883301</p>
+      </center>
+    </div>
+  </div>
+    <br>
+    <div class="card">
+  <div class="card-header">
+    <h5>Career objective</h5>
+  </div>
+  <div class="card-body">
+       <p class="card-text">I am an energetic, passionate, and detail-oriented Computer Science major (4.68 GPA)
+         currently attending Caleb University Lagos, with 14 months of work experience. Aiming to leverage a proven
+         knowledge of application development, database design, and web design skills to successfully fill the software
+         engineer role (backend developer) at your company. Frequently praised as adaptable by my peers, I can be relied
+         upon to help your company achieve its goals.I am an energetic, passionate, and detail-oriented Computer Science
+         major (4.68 GPA) currently attending Caleb University Lagos, with 14 months of work experience. Aiming to
+         leverage a proven knowledge of application development, database design, and web design skills to successfully
+         fill the software engineer role (backend developer) anywhere. Frequently praised as adaptable by my
+         peers, I can be relied upon to help your company achieve its goals.</p>
+      </div>
+</div>
+
+      <br>
+    <div class="card">
+  <div class="card-header">
+   <center><h5>Education</h5></center>
+  </div>
+  <div class="card-body">
+  <center>  <p class="card-text"><i> <b>CALEB UNIVERSITY LAGOS </b></i> <br>
+GPA: 4.68 <br>
+Ikorodu, Lagos <br>
+Bachelor of Science (B.S.) Computer Science<br> <br>
+<i> <b> Relevant Coursework </b></i> <br>
+Object-Oriented programming<br>
+Algorithms and Data Structure <br>
+Computational Science and Numerical Methods <br>
+Software Engineering <br>
+Human-Computer Interaction <br>
+Artificial Intelligence <br><br>
+      <i> <b> Extracurricular Activities </b> </i> <br>
+BLW Fellowship <br>
+UNIVERSITY OF LAGOS <br>
+Ikeja, Lagos <br>
+Diploma (Jun 2018) <br><br>
+<i> <b> Relevant Coursework </b> </i> <br>
+Biology <br>
+Physics <br>
+Chemistry <br><br>
+<i> <b> Extracurricular Activities </b> </i> <br>
+BLW Fellowship <br>
+  </div>
+</div>
+
+      <br>
+    <div class="card">
+  <div class="card-header">
+ <center><h5>Additional Skills</h5></center>
+  </div>
+  <div class="card-body">
+   <center> <p class="card-text">MySql <br>
+Java <br>
+Python (Django Framework) <br>
+CSS <br>
+HTML <br>
+</center> </p>
+   </div>
+</div>
+
+      <br>
+    <div class="card">
+  <div class="card-header">
+    <h5>Experience</h5>
+  </div>
+  <div class="card-body">
+    <p class="card-text"><b>Jun 2020 - Nov 2020 </b> <br>
+     <b> INTERN/SOFTWARE DEVELOPER/SOCIAL MEDIA MANAGER <br>
+Melodia Coding Academy, Obalende, Lagos </b> <br> <br>
+•	Design, build, or maintain web sites, using authoring or scripting languages, content creation tools, management
+      tools, and digital media. <br>
+•	Write, design, or edit web page content, or direct others producing content. <br>
+•	Confer with management or development teams to prioritize needs, resolve conflicts, develop content criteria, or
+      choose solutions. <br>
+•	Evaluate code to ensure that it is valid, is properly structured, meets industry standards and is compatible with
+      browsers, devices, or operating systems. <br> <br>
+    <b>   APR 2021 - JUL 2021 </b> <br>
+ <b> Zuri & I4G Training </b> </br>
+•	Trained with a number of developers in the backend track learning python programming language, performing a number
+      of tasks as I used the Django framework. <br>  <br>
+  <b>    HNG INTERNSHIP </b> <br>
+      AUG 2021 till date.
+</p>
+          <ul class="social-links">
+              <li><a href="https://internship.zuri.team/enrollment"><img src="https://hng.tech/img/brand-logo.png"
+                                                                         alt="" /></a></li>
+            </ul>
+  </div>
+       <div class="card">
+		  <div class="card card-body h-100">
+              <hr>
+            <p>You can get in touch with me using the form below:</p>
+              <div class="mb-3">
+			    <form method="post">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button class="btn btn-success" type="submit">Get in touch</button>
+                </form>
+              </div>
+		  </div>
+		</div>
+</div>
+
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>
