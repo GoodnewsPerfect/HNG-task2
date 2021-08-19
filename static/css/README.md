@@ -8,4 +8,4 @@ This program can be found in the fullName.py file
 
 3. Host the page on heroku.
 
-The link to the heroku page is:
+The link to the heroku page is:https://goodnews-resume.herokuapp.com/
